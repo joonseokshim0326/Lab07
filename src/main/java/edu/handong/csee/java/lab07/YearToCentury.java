@@ -49,7 +49,7 @@ public class YearToCentury  // defining class Year To century
 	{
 		// TODO Auto-generated method stub
        int yr = 0; // put value of 0 to yr
-       Scanner keyboard =new Scanner(System.in); // data can be entered using keyboard
+       Scanner keyboard = new Scanner(System.in); // data can be entered using keyboard
        
        System.out.println("Input year: ");// print out text and sets up things so the program can accept keyboard input
        yr = keyboard.nextInt(); // read number from keyboard
@@ -57,7 +57,7 @@ public class YearToCentury  // defining class Year To century
        YearToCentury year = new YearToCentury(yr); // // instantiate year
        System.out.println(yr + " is " + year.calc_century() + "th century."); // print out the result of calcultation
 
-		
+       
 	}
 
 }
