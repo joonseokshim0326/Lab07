@@ -22,27 +22,27 @@ public class Attendance // defining class Attendence
 	 */
 	public Attendance() // defining method Attendance
 	{
-	this.name = "Null"; // put value of Null to name
-	this.year = 0; // put value of 0 to year
-	this.student_id = "Null"; // put value of Null to student_id
-	this.missed = 0; // put value of 0 to missed
+		this.name = "Null"; // put value of Null to name
+		this.year = 0; // put value of 0 to year
+		this.student_id = "Null"; // put value of Null to student_id
+		this.missed = 0; // put value of 0 to missed
 	}
-	
-    /**
-     * method Attendance created instance of an object
-     * @param name
-     * @param year
-     * @param student_id
-     * @param missed
-     */
+
+	/**
+	 * method Attendance created instance of an object
+	 * @param name
+	 * @param year
+	 * @param student_id
+	 * @param missed
+	 */
 	public Attendance(String name, int year, String student_id, int missed) // defining method
 	{
-	this.name = name; // instance variable name
-	this.year = year; // instance variable year
-	this.student_id = student_id; // instance variable student_id
-	this.missed = missed; // instance variable missed
+		this.name = name; // instance variable name
+		this.year = year; // instance variable year
+		this.student_id = student_id; // instance variable student_id
+		this.missed = missed; // instance variable missed
 	}
-	
+
 	//Getters
 	/**
 	 * method String get_name makes getting value of name
@@ -50,7 +50,7 @@ public class Attendance // defining class Attendence
 	 */
 	public String get_name() // defining method String get_name
 	{
-	return name; // returning value of name
+		return name; // returning value of name
 	}
 	/**
 	 * method get_year makes getting value of year
@@ -58,17 +58,17 @@ public class Attendance // defining class Attendence
 	 */
 	public int get_year() // defining method get_year
 	{
-	return year; // returning value of year
+		return year; // returning value of year
 	}
-	
-	
-    /**
-     * method String get_id makes getting value of student_id
-     * @return value of student_id
-     */
+
+
+	/**
+	 * method String get_id makes getting value of student_id
+	 * @return value of student_id
+	 */
 	public String get_id() // defining method get_id
 	{
-	return student_id; // returning value of student_id
+		return student_id; // returning value of student_id
 	}
 	/**
 	 * method get_missed makes getting value of missed
@@ -76,7 +76,7 @@ public class Attendance // defining class Attendence
 	 */
 	public int get_missed() // defining method get missed
 	{
-	return missed; // returning value of missed
+		return missed; // returning value of missed
 	}
 
 	//Setters
@@ -86,7 +86,7 @@ public class Attendance // defining class Attendence
 	 */
 	public void set_name(String name) // defining method set_name
 	{
-	this.name = name; // returning value of name
+		this.name = name; // returning value of name
 	}
 	/**
 	 * method set_year makes setting value of year
@@ -94,7 +94,7 @@ public class Attendance // defining class Attendence
 	 */
 	public void set_year(int year) // defining
 	{
-	this.year = year; // returning value of year
+		this.year = year; // returning value of year
 	}
 	/**
 	 * method set_id makes setting value of student_id
@@ -102,7 +102,7 @@ public class Attendance // defining class Attendence
 	 */
 	public void set_id(String student_id) // defining method set_id
 	{
-	this.student_id = student_id; // returning value of student_id
+		this.student_id = student_id; // returning value of student_id
 	}
 	/**
 	 * method set_missed makes setting value of missed
@@ -110,14 +110,14 @@ public class Attendance // defining class Attendence
 	 */
 	public void set_missed(int missed) // defining method set_missed
 	{
-	this.missed = missed; // returning value of missed
+		this.missed = missed; // returning value of missed
 	}
-    /**
-     * This is main method which starts our program
-     * print out information of students and the number of absent
-     * If absent over 6, then print out message of fail
-     * @param args
-     */
+	/**
+	 * This is main method which starts our program
+	 * print out information of students and the number of absent
+	 * If absent over 6, then print out message of fail
+	 * @param args
+	 */
 	public static void main(String[] args) // defining main method
 	{
 		// TODO Auto-generated method stub
@@ -135,37 +135,37 @@ public class Attendance // defining class Attendence
 		s_2.set_missed(randomGenerator.nextInt(10)); // generating random value between 1~10
 		s_3.set_missed(randomGenerator.nextInt(10)); // generating random value between 1~10
 		s_4.set_missed(randomGenerator.nextInt(10)); // generating random value between 1~10
-		
+
 		if(s_1.get_missed() > 6) // implement in condition of s_1.get_missed() > 6
 		{
-		System.out.println("I'm sorry " + s_1.get_name() + ". You fail this course"); // print out name and text message
-		System.out.println(s_1.get_name() + " - Number of absence: " + s_1.get_missed()); // print out name, missed and text message
+			System.out.println("I'm sorry " + s_1.get_name() + ". You fail this course"); // print out name and text message
+			System.out.println(s_1.get_name() + " - Number of absence: " + s_1.get_missed()); // print out name, missed and text message
 		}
 		else // implement in condition except for s_1.get_missed() > 6
-		System.out.println("We'll see about the grade, " + s_1.get_name()); // print out text message and name
-		
+			System.out.println("We'll see about the grade, " + s_1.get_name()); // print out text message and name
+
 		if(s_2.get_missed() > 6) // implement in condition of s_2.get_missed() > 6
 		{
-		System.out.println("I'm sorry " + s_2.get_name() + ". You fail this course");// print out name and text message
-		System.out.println(s_2.get_name() + " - Number of absence: " + s_2.get_missed());// print out name, missed and text message
+			System.out.println("I'm sorry " + s_2.get_name() + ". You fail this course");// print out name and text message
+			System.out.println(s_2.get_name() + " - Number of absence: " + s_2.get_missed());// print out name, missed and text message
 		}
 		else // implement in condition except for s_2.get_missed() > 6
-		System.out.println("We'll see about the grade, " + s_2.get_name()); // print out text message and name
-		
+			System.out.println("We'll see about the grade, " + s_2.get_name()); // print out text message and name
+
 		if(s_3.get_missed() > 6) // implement in condition of s_3.get_missed() > 6
 		{
-		System.out.println("I'm sorry " + s_3.get_name() + ". You fail this course");// print out name and text message
-		System.out.println(s_3.get_name() + " - Number of absence: " + s_3.get_missed());// print out name, missed and text message
+			System.out.println("I'm sorry " + s_3.get_name() + ". You fail this course");// print out name and text message
+			System.out.println(s_3.get_name() + " - Number of absence: " + s_3.get_missed());// print out name, missed and text message
 		}
 		else // implement in condition except for s_3.get_missed() > 6
-		System.out.println("We'll see about the grade, " + s_3.get_name()); // print out text message and name
+			System.out.println("We'll see about the grade, " + s_3.get_name()); // print out text message and name
 		if(s_4.get_missed() > 6)// implement in condition of s_4.get_missed() > 6
 		{
-		System.out.println("I'm sorry " + s_1.get_name() + ". You fail this course");// print out name and text message
-		System.out.println(s_4.get_name() + " - Number of absence: " + s_4.get_missed());// print out name, missed and text message
+			System.out.println("I'm sorry " + s_1.get_name() + ". You fail this course");// print out name and text message
+			System.out.println(s_4.get_name() + " - Number of absence: " + s_4.get_missed());// print out name, missed and text message
 		}
 		else // implement in condition except for s_4.get_missed() > 6
-		System.out.println("We'll see about the grade, " + s_4.get_name()); // print out text message and name
+			System.out.println("We'll see about the grade, " + s_4.get_name()); // print out text message and name
 
 
 	}
